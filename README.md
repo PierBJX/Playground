@@ -12,3 +12,4 @@ Dossier d'expérimentation : un sous-dossier par test, indépendant des autres.
 
 | Dossier | Sujet | Conclusion |
 | ------- | ----- | ---------- |
+| [2026-11-pnpm-deps-vs-peers](2026-11-pnpm-deps-vs-peers/) | pnpm : deux libs qui demandent des versions incompatibles d'un même paquet, en dependencies vs en peerDependencies | dependencies : chaque lib a sa version, donc deux copies. peerDependencies : si l'app ne fournit pas lodash, l'installation réussit avec un simple avertissement et l'app plante au démarrage ; si elle le fournit (`pnpm add lodash`), elle ne peut en choisir qu'une version et l'une des libs casse |

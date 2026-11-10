@@ -1,0 +1,18 @@
+{
+  "name": "app-with-lodash",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "build": "esbuild index.js --bundle --platform=node --outfile=dist/index.js --analyze --log-override:require-resolve-not-external=silent",
+    "why:lodash": "pnpm why lodash"
+  },
+  "dependencies": {
+    "lib1": "file:../lib1-1.0.0.tgz",
+    "lib2": "file:../lib2-2.0.0.tgz",
+    "lodash": "^4.18.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "packageManager": "pnpm@11.28.11"
+}

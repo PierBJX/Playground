@@ -1,0 +1,11 @@
+{
+  "name": "lib2",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pack:tarball": "pnpm pack --pack-destination .."
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
